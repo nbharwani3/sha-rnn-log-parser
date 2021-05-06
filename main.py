@@ -5,10 +5,6 @@ path = os.getcwd()
 filepath = os.path.join(path, "fully_connected.log")
 f = open(filepath, "r")
 
-
-# | end of epoch  25 | time: 6633.76s | valid loss  0.80 | valid ppl     2.22 | valid bpc    1.148
-# | epoch  25 |    10/10986 batches | lr 0.00200 | ms/batch 613.62 | loss  0.86 | ppl     2.36 | bpc    1.241
-
 def addToValues(list, epoch, key, value):
     if (key == "epoch" or key == "endofepoch") and value not in list.keys():
         list[value] = {}
